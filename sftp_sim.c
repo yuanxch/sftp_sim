@@ -75,7 +75,7 @@ int main(int argc, char *argv[])
 	}
 
 	/* 判断是否加了必填参数 -x */
-	if (ssh_conf.host == NULL || ssh_conf.user || ssh_conf.pass || ssh_conf.source || ssh_conf.target) {
+	if (ssh_conf.host == NULL || ssh_conf.user == NULL || ssh_conf.pass == NULL || ssh_conf.source == NULL || ssh_conf.target == NULL) {
 		show_help();
 		fprintf(stderr, "Attention: Please use the indispensable arguments\n\n");		
 		exit(1);
